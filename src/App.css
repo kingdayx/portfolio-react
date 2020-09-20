@@ -90,15 +90,7 @@
 .scrollColor:hover {
   color: blueviolet !important;
 }
-.view {
-  padding: 10px 20px 10px 20px;
-  background-color: transparent;
-  margin-top: 15px;
-  border: whitesmoke solid 3px;
-}
-.view:hover {
-  background-color: green;
-}
+
 .rotate {
   transition: transform 1s ease;
 }
@@ -117,9 +109,6 @@ button:hover .rotate {
 }
 .icon {
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .hex {
   display: flex;
@@ -151,6 +140,9 @@ button:hover .rotate {
   width: 104px;
   height: 60px;
   background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .tri1 {
   width: 0;
