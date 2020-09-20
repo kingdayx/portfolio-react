@@ -1,5 +1,12 @@
 import React from "react";
 import "../App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTachometerAlt,
+  faLaptopCode,
+  faLightbulb,
+  faRocket,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
   return (
@@ -15,7 +22,11 @@ export default function About() {
               <div className="container">
                 <div className="tri1"></div>
                 <div className="hexa">
-                  <i className="fas fa-tachometer-alt icon fa-3x"></i>
+                  <FontAwesomeIcon
+                    className="icon"
+                    icon={faTachometerAlt}
+                    size="4x"
+                  />
                 </div>
                 <div className="tri2"></div>
               </div>
@@ -32,7 +43,11 @@ export default function About() {
               <div className="container">
                 <div className="tri1"></div>
                 <div className="hexa">
-                  <i className="fas fa-laptop-code icon fa-3x"></i>
+                  <FontAwesomeIcon
+                    className="icon"
+                    size="4x"
+                    icon={faLaptopCode}
+                  />
                 </div>
                 <div className="tri2"></div>
               </div>
@@ -47,7 +62,11 @@ export default function About() {
               <div className="container">
                 <div className="tri1"></div>
                 <div className="hexa">
-                  <i className="far fa-lightbulb icon fa-3x"></i>
+                  <FontAwesomeIcon
+                    className="icon"
+                    size="4x"
+                    icon={faLightbulb}
+                  />
                 </div>
                 <div className="tri2"></div>
               </div>
@@ -60,7 +79,7 @@ export default function About() {
               <div className="container">
                 <div className="tri1"></div>
                 <div className="hexa">
-                  <i className="fas fa-rocket icon fa-3x"></i>
+                  <FontAwesomeIcon className="icon" size="4x" icon={faRocket} />
                 </div>
                 <div className="tri2"></div>
               </div>
@@ -82,14 +101,12 @@ export default function About() {
         alt="the blockchain developer"
       /> */}
       <p>
-        <i className="far fa-lightbulb"></i>
-        <i className="fas fa-rocket"></i>I was born and raised in Nashville, TN
-        and moved to Atlantic City, NJ 5 years ago. I started learning
-        programming 7 years ago when I was 17. My first language was C++. When I
-        wrote my first application with C++ I was so baffled! I was challenged
-        to learn blockchain development in only 2 months 3 years ago by a friend
-        of my mom. Ever since I've been determined and excited to pave the
-        future with blockchain technologies{" "}
+        I was born and raised in Nashville, TN and moved to Atlantic City, NJ 5
+        years ago. I started learning programming 7 years ago when I was 17. My
+        first language was C++. When I wrote my first application with C++ I was
+        so baffled! I was challenged to learn blockchain development in only 2
+        months 3 years ago by a friend of my mom. Ever since I've been
+        determined and excited to pave the future with blockchain technologies{" "}
       </p>{" "}
       *
     </div>

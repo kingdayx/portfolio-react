@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "../App.css";
 
 function Header() {
@@ -25,7 +27,8 @@ function Header() {
           size="lg"
           onClick={scrollToAbout}
         >
-          View my work <i className="fas fa-arrow-right rotate"></i>
+          View my work{" "}
+          <FontAwesomeIcon className="rotate" icon={faArrowRight} />
         </Button>
       </header>
     </div>
