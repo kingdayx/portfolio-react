@@ -1,31 +1,7 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +11,158 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  background-color: aqua;
+  width: 100%;
+}
+.App-header {
+  height: 109vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nav {
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  -webkit-animation: fadeInDown 2s;
+  animation: fadeInDown 2s;
+}
+
+.navi {
+  margin-left: 12%;
+  font-size: larger;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+}
+.name1 {
+  color: blueviolet;
+  text-decoration: none;
+}
+.name1:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+.items {
+  color: whitesmoke;
+}
+.items:hover {
+  color: blueviolet;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.scrollColor {
+  color: blueviolet;
+}
+.scrollColor:hover {
+  color: blueviolet !important;
+}
+.view {
+  padding: 10px 20px 10px 20px;
+  background-color: transparent;
+  margin-top: 15px;
+  border: whitesmoke solid 3px;
+}
+.view:hover {
+  background-color: green;
+}
+.rotate {
+  transition: transform 1s ease;
+}
+button:hover .rotate {
+  transform: rotate(90deg);
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about {
+  padding-top: 90px;
+  height: 110vh;
+  width: 100%;
+}
+.icon {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hex {
+  display: flex;
+  flex-direction: row;
+}
+.hexs {
+  justify-content: center;
+  padding: 30px;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.hex1 {
+  display: flex;
+  flex-direction: column;
+
+  width: 230px;
+}
+
+#fastest {
+  padding-left: 40px;
+}
+.para {
+  width: 200px;
+  position: absolute;
+}
+
+.hexa {
+  width: 104px;
+  height: 60px;
+  background-color: blueviolet;
+}
+.tri1 {
+  width: 0;
+  border-bottom: 30px solid blueviolet;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.tri2 {
+  width: 0;
+  border-top: 30px solid blueviolet;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.container {
+  filter: drop-shadow(0 0 0.75rem black);
 }
