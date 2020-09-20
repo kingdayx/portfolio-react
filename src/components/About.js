@@ -16,79 +16,86 @@ export default function About() {
           <h1>About</h1>
         </div>
         <hr />
-        <div className="hexs">
-          <div className="hex">
-            <div className="hex1">
-              <div className="container">
-                <div className="tri1"></div>
-                <div className="hexa">
-                  <FontAwesomeIcon
-                    className="icon"
-                    icon={faTachometerAlt}
-                    size="4x"
-                  />
+        <div className="contain">
+          <div className="hexs">
+            <div className="hex">
+              <div className="hex1">
+                <div className="container">
+                  <div className="tri1"></div>
+                  <div className="hexa">
+                    <FontAwesomeIcon
+                      className="icon"
+                      size="4x"
+                      icon={faTachometerAlt}
+                    />
+                  </div>
+                  <div className="tri2"></div>
                 </div>
-                <div className="tri2"></div>
+                <div className="fast">
+                  <h3 id="fastest">Fast</h3>
+                </div>
+                <div>
+                  <p className="para">
+                    Fast load times and lag free interaction, my highest
+                    priority.
+                  </p>
+                </div>
               </div>
-              <div className="fast">
-                <h3 id="fastest">Fast</h3>
-              </div>
-              <div>
-                <p className="para">
-                  Fast load times and lag free interaction, my highest priority.
-                </p>
+              <div className="hex1">
+                <div className="container">
+                  <div className="tri1"></div>
+                  <div className="hexa">
+                    <FontAwesomeIcon
+                      className="icon"
+                      size="4x"
+                      icon={faLaptopCode}
+                    />
+                  </div>
+                  <div className="tri2"></div>
+                </div>
+                <div>
+                  <h3>Responsive</h3>
+                  <p>My layouts will work on any device, big or small.</p>
+                </div>
               </div>
             </div>
-            <div className="hex1">
-              <div className="container">
-                <div className="tri1"></div>
-                <div className="hexa">
-                  <FontAwesomeIcon
-                    className="icon"
-                    size="4x"
-                    icon={faLaptopCode}
-                  />
+            <div className="hex">
+              <div className="hex1">
+                <div className="container">
+                  <div className="tri1"></div>
+                  <div className="hexa">
+                    <FontAwesomeIcon
+                      className="icon"
+                      size="4x"
+                      icon={faLightbulb}
+                    />
+                  </div>
+                  <div className="tri2"></div>
                 </div>
-                <div className="tri2"></div>
-              </div>
-              <div>
-                <h3>Responsive</h3>
-                <p>My layouts will work on any device, big or small.</p>
-              </div>
-            </div>
-          </div>
-          <div className="hex">
-            <div className="hex1">
-              <div className="container">
-                <div className="tri1"></div>
-                <div className="hexa">
-                  <FontAwesomeIcon
-                    className="icon"
-                    size="4x"
-                    icon={faLightbulb}
-                  />
+                <div>
+                  <h3>Intuitive</h3>
+                  <p>Strong preference for easy to use, intuitive UX/UI.</p>
                 </div>
-                <div className="tri2"></div>
               </div>
-              <div>
-                <h3>Intuitive</h3>
-                <p>Strong preference for easy to use, intuitive UX/UI.</p>
-              </div>
-            </div>
-            <div className="hex1">
-              <div className="container">
-                <div className="tri1"></div>
-                <div className="hexa">
-                  <FontAwesomeIcon className="icon" size="4x" icon={faRocket} />
+              <div className="hex1">
+                <div className="container">
+                  <div className="tri1"></div>
+                  <div className="hexa">
+                    <FontAwesomeIcon
+                      className="icon"
+                      size="4x"
+                      icon={faRocket}
+                    />
+                  </div>
+                  <div className="tri2"></div>
                 </div>
-                <div className="tri2"></div>
-              </div>
-              <div>
-                <h3>Dynamic</h3>
-                <p>
-                  Websites don't have to be static, I love making pages come to
-                  life.
-                </p>
+                <div>
+                  <h3>Dynamic</h3>
+                  <p>
+                    Websites don't have to be static, I love making pages come
+                    to life.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -113,10 +113,12 @@ button:hover .rotate {
 .hex {
   display: flex;
   flex-direction: row;
+  padding-bottom: 24%;
 }
 .hexs {
   justify-content: center;
   padding: 30px;
+  padding-bottom: 24%;
   align-content: center;
   display: flex;
   flex-direction: row;
@@ -124,7 +126,8 @@ button:hover .rotate {
 .hex1 {
   display: flex;
   flex-direction: column;
-
+  padding-top: 17%;
+  padding-left: 5em;
   width: 230px;
 }
 
@@ -159,3 +162,7 @@ button:hover .rotate {
 .container {
   filter: drop-shadow(0 0 0.75rem black);
 }
+/* .contain {
+  margin-bottom: -100px;
+  margin-left: -100px;
+} */
