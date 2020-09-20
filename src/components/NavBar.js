@@ -31,22 +31,22 @@ export default function Header() {
       setHome(false);
     }
   };
-  const handleScrollPortfolio = () => {
-    const offset = window.scrollY;
-    if (offset > 783) {
-      setAbout(true);
-    } else {
-      setAbout(false);
-    }
-  };
-  const handleScrollContact = () => {
-    const offset = window.scrollY;
-    if (offset > 783) {
-      setAbout(true);
-    } else {
-      setAbout(false);
-    }
-  };
+  // const handleScrollPortfolio = () => {
+  //   const offset = window.scrollY;
+  //   if (offset > 783) {
+  //     setAbout(true);
+  //   } else {
+  //     setAbout(false);
+  //   }
+  // };
+  // const handleScrollContact = () => {
+  //   const offset = window.scrollY;
+  //   if (offset > 783) {
+  //     setAbout(true);
+  //   } else {
+  //     setAbout(false);
+  //   }
+  // };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);

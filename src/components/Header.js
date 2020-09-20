@@ -15,7 +15,7 @@ function Header() {
         <div className="name">
           <h1>
             Hello, I'm
-            <a className="name1"> Elisha Day</a>.
+            <i className="name1"> Elisha Day</i>.
           </h1>
         </div>
         <h1>I am a Blockchain Developer.</h1>

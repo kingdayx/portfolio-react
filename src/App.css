@@ -70,6 +70,7 @@
 .name1 {
   color: blueviolet;
   text-decoration: none;
+  font-style: normal;
 }
 .name1:hover {
   color: blueviolet;
