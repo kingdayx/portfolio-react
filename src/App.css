@@ -134,6 +134,12 @@ button:hover .rotate {
 #fastest {
   padding-left: 40px;
 }
+#fastest1 {
+  padding-left: 15px;
+}
+#fastest2 {
+  padding-left: 10px;
+}
 .para {
   width: 200px;
   position: absolute;
@@ -166,3 +172,61 @@ button:hover .rotate {
   margin-bottom: -100px;
   margin-left: -100px;
 } */
+.hr1 {
+  width: 10ch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 200mm;
+  padding-top: 10mm;
+}
+.hr2 {
+  width: 7ch;
+  border-top: 3px solid black;
+}
+.scrollIn {
+  opacity: 1;
+  animation: fadeIn 2s;
+}
+.scrollInHex {
+  opacity: 1;
+  animation: fadeInHex 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInHex {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.flip {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip:hover .flip-inner {
+  transform: rotateY(180deg);
+}
