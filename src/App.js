@@ -5,13 +5,15 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import NavBar from "./components/NavBar";
 import PortFolio from "./components/PortFolio";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <NavBar />
       <About />
+      <Skills />
       <PortFolio />
       <Contact />
     </div>

@@ -1,18 +1,3 @@
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .header {
   background-color: aqua;
   width: 100%;
@@ -49,6 +34,23 @@
   width: 100%;
   background-color: black;
   z-index: 1;
+  height: 43px;
+}
+.navView {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  height: 43px;
+  width: 100%;
+  background-color: black;
+  border-bottom: blueviolet solid 3px;
+}
+.plus {
+  z-index: 2;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  color: blueviolet;
 }
 .scrolled {
   position: fixed;
@@ -60,8 +62,18 @@
 }
 
 .navi {
+  display: flex;
+  flex-direction: row;
   margin-left: 12%;
   font-size: larger;
+}
+.navi1 {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: black;
 }
 .name {
   display: flex;
@@ -76,6 +88,10 @@
   color: blueviolet;
   text-decoration: none;
 }
+.item {
+  margin-bottom: -25px;
+}
+
 .items {
   color: whitesmoke;
 }
@@ -141,10 +157,11 @@ button:hover .rotate {
   padding-left: 10px;
 }
 .para {
-  width: 200px;
-  position: absolute;
+  width: 60mm;
 }
-
+.para1 {
+  margin-left: 2mm;
+}
 .hexa {
   width: 104px;
   height: 60px;
@@ -168,10 +185,6 @@ button:hover .rotate {
 .container {
   filter: drop-shadow(0 0 0.75rem black);
 }
-/* .contain {
-  margin-bottom: -100px;
-  margin-left: -100px;
-} */
 .hr1 {
   width: 10ch;
   display: flex;
@@ -229,4 +242,138 @@ button:hover .rotate {
 }
 .flip:hover .flip-inner {
   transform: rotateY(180deg);
+}
+.leftAbout {
+  padding-top: -700mm;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.who {
+  font-size: large;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hotpink;
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  /* border-radius: 5px; */
+  box-shadow: 0 0 0 2px white;
+  overflow: hidden;
+}
+.gas {
+  color: blue;
+  transition: width 1.1s 0.2s ease-in-out;
+}
+@keyframes width {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(90%);
+  }
+}
+.graph {
+  width: 65%;
+}
+.About2 {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.container1 {
+  width: 160mm;
+  height: 100%;
+}
+.bar {
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.bars {
+  padding-top: -700mm;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.barName {
+  margin-right: auto;
+  background-color: blueviolet;
+  color: white;
+  width: 80px;
+  padding-left: 20px;
+}
+.barName1 {
+  margin-right: auto;
+  background-color: blueviolet;
+  color: white;
+  width: 80px;
+  padding-left: 7px;
+}
+.barName2 {
+  margin-right: auto;
+  background-color: blueviolet;
+  color: white;
+  width: 80px;
+  padding-left: 25px;
+}
+.barName3 {
+  margin-right: auto;
+  background-color: blueviolet;
+  color: white;
+  width: 80px;
+  padding-left: 15px;
+}
+.barName4 {
+  margin-right: auto;
+  background-color: blueviolet;
+  color: white;
+  width: 80px;
+  padding-left: 15px;
+}
+.barName5 {
+  margin-right: auto;
+  background-color: blueviolet;
+  color: white;
+  width: 80px;
+  padding-left: 25px;
+}
+.barName6 {
+  margin-right: auto;
+  background-color: blueviolet;
+  color: white;
+  width: 80px;
+  padding-left: 15px;
+}
+.barName7 {
+  margin-right: auto;
+  background-color: blueviolet;
+  color: white;
+  width: 80px;
+  padding-left: 5px;
+}
+.fill {
+  color: black;
+  background-color: black;
 }
