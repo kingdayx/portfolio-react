@@ -8,8 +8,15 @@ import {
   faRocket,
 } from "@fortawesome/free-solid-svg-icons";
 import { useSpring, animated } from "react-spring";
+import { motion } from "framer-motion";
 
-export default function About() {
+const aniHead = {
+  init: { x: -800, opacity: 0 },
+  enter: { x: 0, opacity: 1 },
+
+};
+
+export default function About1() {
   const [about, setAbout] = useState(false);
   const [hr, setHr] = useState(false);
   const [hex, setHex] = useState(false);
@@ -67,9 +74,15 @@ export default function About() {
     <div className="about">
       <div className="hr1">
         <div>
-          <div className={x.join(" ")}>
+          <motion.div
+            variants={aniHead}
+            initial="init"
+            animate={about ? "enter" : "init"}
+            className="head"
+            transition={{duration:1}}
+          >
             <h1>About</h1>
-          </div>
+          </motion.div>
           <animated.hr style={props} className="hr2" />
         </div>
       </div>

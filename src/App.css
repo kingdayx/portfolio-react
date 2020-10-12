@@ -120,7 +120,7 @@ button:hover .rotate {
 }
 .about {
   padding-top: 90px;
-  height: 110vh;
+  height: 100vh;
   width: 100%;
 }
 .icon {
@@ -293,8 +293,10 @@ button:hover .rotate {
 }
 .About2 {
   display: flex;
+  padding-top: 90px;
   flex-direction: row;
   overflow: hidden;
+  height: 90vh;
 }
 .container1 {
   width: 160mm;
@@ -310,7 +312,7 @@ button:hover .rotate {
   margin-bottom: 15px;
 }
 .bars {
-  padding-top: -700mm;
+  margin-top: 41px;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -376,4 +378,13 @@ button:hover .rotate {
 .fill {
   color: black;
   background-color: black;
+}
+.backdrop {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 1;
 }

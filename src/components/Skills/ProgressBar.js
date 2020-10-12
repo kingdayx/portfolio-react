@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function ProgressBar(props) {
+  const [bar, setBar] = useState(false);
   const { completed, custom } = props;
+
+  const handleBar = () => {
+    const offset = window.scrollY;
+    if (offset > 1333) {
+      setBar(true);
+    } else {
+      setBar(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleBar);
+  });
 
   const containerStyles = {
     width: "89%",
@@ -23,9 +37,13 @@ export default function ProgressBar(props) {
     fontWeight: "bold",
   };
   const variants = {
-    visible: (custom) => ({
+    initial: { width: "0%", opacity: 0 },
+    animate: (custom) => ({
       opacity: 1,
-      transition: { delay: custom * 0.2 },
+      transition: {
+        duration: 1,
+        delay: custom * 0.2,
+      },
       width: `${completed}%`,
     }),
   };
@@ -33,8 +51,8 @@ export default function ProgressBar(props) {
   return (
     <div style={containerStyles}>
       <motion.div
-        initial={{ width: 0, opacity: 0 }}
-        animate="visible"
+        initial="initial"
+        animate={bar ? "animate" : "initial"}
         custom={custom}
         variants={variants}
         style={fillerStyles}

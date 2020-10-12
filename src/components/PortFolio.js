@@ -1,33 +1,21 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import Modal from "react-modal";
 
 export default function PortFolio() {
-  const [selectedId, setSelectedId] = useState(null);
-  const items = [
-    { id: 1, title: "dapp", subtitle: "made with react" },
-    { id: 2, title: "clapp", subtitle: "made with react" },
-    { id: 3, title: "papp", subtitle: "made with react" },
-  ];
+  const [modal, setModal] = useState(false);
+
   return (
     <div>
-      <AnimateSharedLayout type="crossfade">
-        {items.map((item) => (
-          <motion.div layoutId={item.id} onClick={() => setSelectedId(item.id)}>
-            <motion.h5>{item.subtitle}</motion.h5>
-            <motion.h2>{item.title}</motion.h2>
-          </motion.div>
-        ))}
-
-        <AnimatePresence>
-          {selectedId && (
-            <motion.div layoutId={items.id}>
-              <motion.h5>{items.subtitle}</motion.h5>
-              <motion.h2>{items.title}</motion.h2>
-              <motion.button onClick={() => setSelectedId(null)} />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </AnimateSharedLayout>
+      <h1 className="head">Portfolio</h1>
+      <div className="head" >React</div>
+      <div className="head" >React Native</div>
+      <div className="head" >Dapps</div>
+      <div className="box">OTR Firms</div>
+      <div className="box"></div>
+      <div className="box"></div>
+      <div className="box"></div>
+      <button onClick={()=>{setModal(true)}} >Click Me</button>
+     <Modal isOpen={modal} onRequestClose={()=>{setModal(false)}} ><div>This is modal</div></Modal>
     </div>
   );
 }

@@ -4,9 +4,13 @@ import ProgressBar from "./ProgressBar";
 import { motion } from "framer-motion";
 
 const barsVariant = {
-  initial: { x: "1500%", opacity: 0 },
+  initial: { x: 1500, opacity: 0 },
   animate: { x: 0, opacity: 1 },
-  transition: { duration: 1, delay: 1 },
+};
+
+const debuddle ={
+  initial: { x: -1500, opacity: 0 },
+  animate: { x: 0, opacity: 1 },
 };
 
 export default function Skills() {
@@ -40,7 +44,10 @@ export default function Skills() {
 
   return (
     <div className="About2">
-      <animated.div className={xxxx.join(" ")}>
+      <motion.div variants={debuddle}
+        initial="initial"
+        animate={pic ? "animate" : "initial"}
+        transition={{ duration: 1 }} className="leftAbout">
         <img
           src="/images/pfpCrop.jpg"
           width="288.77"
@@ -57,13 +64,13 @@ export default function Skills() {
           determined and excited to pave the future with blockchain
           technologies.
         </p>
-      </animated.div>
+      </motion.div>
       <motion.div
         className="bars"
         variants={barsVariant}
         initial="initial"
         animate={skill ? "animate" : "initial"}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1 }}
       >
         <div className="container1">
           <div className="bar">
