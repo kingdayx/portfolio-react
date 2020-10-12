@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { animated } from "react-spring";
 import ProgressBar from "./ProgressBar";
 import { motion } from "framer-motion";
 
