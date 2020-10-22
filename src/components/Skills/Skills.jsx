@@ -7,7 +7,7 @@ const barsVariant = {
   animate: { x: 0, opacity: 1 },
 };
 
-const debuddle ={
+const debuddle = {
   initial: { x: -1500, opacity: 0 },
   animate: { x: 0, opacity: 1 },
 };
@@ -43,10 +43,13 @@ export default function Skills() {
 
   return (
     <div className="About2">
-      <motion.div variants={debuddle}
+      <motion.div
+        variants={debuddle}
         initial="initial"
         animate={pic ? "animate" : "initial"}
-        transition={{ duration: 1 }} className="leftAbout">
+        transition={{ duration: 1 }}
+        className="leftAbout"
+      >
         <img
           src="/images/pfpCrop.jpg"
           width="288.77"

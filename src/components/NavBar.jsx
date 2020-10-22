@@ -23,12 +23,22 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   const iconVariants = {
-    opened: { rotate: 45, scale: 2 },
-    closed: { rotate: 0, scale: 1 },
+    opened: {
+      rotate: 45,
+      scale: 2,
+    },
+    closed: {
+      rotate: 0,
+      scale: 1,
+    },
   };
   const menuVariants = {
-    opened: { top: 0 },
-    closed: { top: "-90vh" },
+    opened: {
+      top: 0,
+    },
+    closed: {
+      top: "-90vh",
+    },
   };
 
   const handleScroll = () => {
@@ -66,20 +76,20 @@ export default function Header() {
   }, 1000);
 
   // const handleScrollPortfolio = () => {
-  //   const offset = window.scrollY;
-  //   if (offset > 783) {
+  // const offset = window.scrollY;
+  // if (offset > 783) {
   //     setAbout(true);
-  //   } else {
+  // } else {
   //     setAbout(false);
-  //   }
+  // }
   // };
   // const handleScrollContact = () => {
-  //   const offset = window.scrollY;
-  //   if (offset > 783) {
+  // const offset = window.scrollY;
+  // if (offset > 783) {
   //     setAbout(true);
-  //   } else {
+  // } else {
   //     setAbout(false);
-  //   }
+  // }
   // };
 
   useEffect(() => {
@@ -106,16 +116,10 @@ export default function Header() {
     xxx.push("scrollColor");
   }
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   const scrollToAbout = () => {
-    window.scrollTo({
-      top: 833,
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 833, behavior: "smooth" });
   };
 
   return (

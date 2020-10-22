@@ -13,7 +13,6 @@ import { motion } from "framer-motion";
 const aniHead = {
   init: { x: -800, opacity: 0 },
   enter: { x: 0, opacity: 1 },
-
 };
 
 export default function About1() {
@@ -79,103 +78,103 @@ export default function About1() {
             initial="init"
             animate={about ? "enter" : "init"}
             className="head"
-            transition={{duration:1}}
+            transition={{ duration: 1 }}
           >
-            <h1>About</h1>
-          </motion.div>
+            <h1> About </h1>{" "}
+          </motion.div>{" "}
           <animated.hr style={props} className="hr2" />
-        </div>
-      </div>
+        </div>{" "}
+      </div>{" "}
       <div className="contain">
         <animated.div className={xxx.join(" ")}>
           <div className="hex">
             <div className="hex1">
               <div className="container">
-                <div className="tri1"></div>
+                <div className="tri1"> </div>{" "}
                 <div className="hexa">
                   <FontAwesomeIcon
                     className="icon"
                     size="4x"
                     icon={faTachometerAlt}
-                  />
-                </div>
-                <div className="tri2"></div>
-              </div>
+                  />{" "}
+                </div>{" "}
+                <div className="tri2"> </div>{" "}
+              </div>{" "}
               <div className="fast">
-                <h3 id="fastest">Fast</h3>
-              </div>
+                <h3 id="fastest"> Fast </h3>{" "}
+              </div>{" "}
               <div>
                 <p className="para">
-                  Fast load times and lag free interaction, my highest priority.
-                </p>
-              </div>
-            </div>
+                  Fast load times and lag free interaction, my highest priority.{" "}
+                </p>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="hex1">
               <div className="container">
-                <div className="tri1"></div>
+                <div className="tri1"> </div>{" "}
                 <div className="hexa">
                   <FontAwesomeIcon
                     className="icon"
                     size="4x"
                     icon={faLaptopCode}
-                  />
-                </div>
-                <div className="tri2"></div>
-              </div>
+                  />{" "}
+                </div>{" "}
+                <div className="tri2"> </div>{" "}
+              </div>{" "}
               <div>
-                <h3>Responsive</h3>
-              </div>
+                <h3> Responsive </h3>{" "}
+              </div>{" "}
               <div>
                 <p className="para">
-                  My layouts will work on any device, big or small.
-                </p>
-              </div>
-            </div>
-          </div>
+                  My layouts will work on any device, big or small.{" "}
+                </p>{" "}
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
           <div className="hex">
             <div className="hex1">
               <div className="container">
-                <div className="tri1"></div>
+                <div className="tri1"> </div>{" "}
                 <div className="hexa">
                   <FontAwesomeIcon
                     className="icon"
                     size="4x"
                     icon={faLightbulb}
-                  />
-                </div>
-                <div className="tri2"></div>
-              </div>
+                  />{" "}
+                </div>{" "}
+                <div className="tri2"> </div>{" "}
+              </div>{" "}
               <div>
-                <h3 id="fastest1">Intuitive</h3>
-              </div>
+                <h3 id="fastest1"> Intuitive </h3>{" "}
+              </div>{" "}
               <div>
                 <p className="para1">
-                  Strong preference for easy to use, intuitive UX/UI.
-                </p>
-              </div>
-            </div>
+                  Strong preference for easy to use, intuitive UX / UI.{" "}
+                </p>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="hex1">
               <div className="container">
-                <div className="tri1"></div>
+                <div className="tri1"> </div>{" "}
                 <div className="hexa">
-                  <FontAwesomeIcon className="icon" size="4x" icon={faRocket} />
-                </div>
-                <div className="tri2"></div>
-              </div>
+                  <FontAwesomeIcon className="icon" size="4x" icon={faRocket} />{" "}
+                </div>{" "}
+                <div className="tri2"> </div>{" "}
+              </div>{" "}
               <div>
-                <h3 id="fastest2">Dynamic</h3>
-              </div>
+                <h3 id="fastest2"> Dynamic </h3>{" "}
+              </div>{" "}
               <div>
                 {" "}
                 <p className="para">
-                  Websites don't have to be static, I love making pages come to
-                  life.
-                </p>
-              </div>
-            </div>
-          </div>
-        </animated.div>
-      </div>
+                  Websites don 't have to be static, I love making pages come to
+                  life.{" "}
+                </p>{" "}
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
+        </animated.div>{" "}
+      </div>{" "}
     </div>
   );
 }

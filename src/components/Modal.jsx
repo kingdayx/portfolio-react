@@ -3,8 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Modal = (props) => {
   const backdrop = {
-    visible: { opacity: 1 },
-    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+    },
+    hidden: {
+      opacity: 0,
+    },
   };
   return (
     <AnimatePresence exitBeforeEnter>
